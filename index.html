@@ -4,39 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        div{
-            position:relative;
-            display:  flex;
-            align-items: center;
-            
-            width: 5%;
-            justify-content: center;
-        }
-        h1{
-            text-align: center;
-        }
-        h1::after{
-            content:"";
-            width:0;
-            height:2px;
-            position:absolute;
-            background-color: black;
-            bottom:0;
-            left:0;
-            transition:width 0.8s ease-in;
-        }
-        h1:hover::after{
-            width:100%;
-
-        }
-    </style>
+    <link rel="stylesheet" href="SCSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div>
-        <h1>vedika</h1>
-    </div>
+ <div class="box">
+    <nav>
+        <div class="logo"><img src="Assets/logo.svg" alt=""></div>
+        <div><ul>
+            <li><a href="">Work</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Pages</a></li>
+        </ul></div>
+        <div class="lets_btn">
+              <div><p>(0)</p></div>
+            <button>Let's Create</button>
+            <div class="navicon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        
+    </nav>
+
+    <main>
+        <section class="view_1">
+                    <div><img src="Assets/heading.svg" alt=""></div>
+                    <div class="heading_content">
+                        <div><p>Branding Agency</p></div>
+                        <div><p>From Berlin</p></div>
+                    </div>
+        </section>
+
+        <section class="view_2">
+             <div>
+                <div>
+                    <h1>Unleash­ing Your<br>Brand’s Potential</h1><br>
+                    <p>Comprehensive branding solutions that help fashion, lifestyle, and luxury brands connect with their target audience.</p>
+                
+                </div>
+                <div class="list">
+
+                    <div> <p>01</p></div>
+                    <div> <p>Branding</p></div>
+                    
+                </div>
+                <hr>
+                <div class="list">
+
+                    <div><p>02</p></div>
+                    <div> <p>Campaigns</p></div>
+                    
+                </div>
+                <hr>
+                <div class="list">
+
+                    <div><p>03 </p></div>
+                    <div> <p>E-Commerce</p></div>
+                    
+                </div>
+                <hr>
+                <div class="list">
+
+                    <div><p>04 </p></div>
+                    <div><p>Social Media</p></div>
+                    
+                </div>
+                
+             </div>
+             <div>
+                <img src="Assets/first_img.webp" alt="">
+             </div>
+        </section>
+
+
+        <section class="view_3">
+
+            <div><img src="Assets/img2.webp" alt=""></div>
+            <div class="view_3_content">
+                <div>
+                    <h1>Tailored Brand <br>Solu­tions</h1>
+                <p>We believe that every brand has a unique story to tell and our mission is to help you bring that story to life through exceptional branding, marketing, e-commerce, and social media strategies.</p></div>
+                <div class="verical_sententce">
+                    <p>What we do</p>
+                </div>
+            </div>
+        </section>
+        <section class="view_4">
+
+
+            <div>
+                <h1 class="services_heading">Our Services</h1>
+                <div>
+
+                    <div class="services_options">
+                        <hr>
+                        <h1>Branding</h1>
+                        <p>Establish a strong brand identity that sets you apart.</p>
+                        <div class="arrow_button">
+                            <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                             <div><p>About Branding</p></div>
+                        </div>
+                    </div>
+
+                    <div class="services_options">
+                        <hr>
+                        <h1>Campaigns</h1>
+                        <p>Utilize data and analytics to optimize your marketing performance.</p>
+                        <div class="arrow_button">
+                            <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                             <div><p>About Campaigns</p></div>
+                        </div>
+                    </div>
+                    <div class="services_options">
+                        <hr>
+                        <h1>E-Commerce</h1>
+                        <p>Develop customized online stores that reflect your brand and vision.</p>
+                        <div class="arrow_button">
+                            <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                             <div><p>About e-Commerce</p></div>
+                        </div>
+                    </div>
+                    <div class="services_options">
+                        <hr>
+                        <h1>Social Media</h1>
+                        <p>Create engaging and shareable content that drives brand awareness.</p>
+                        <div class="arrow_button">
+                            <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                             <div><p>About Social Media</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="Assets/img3.webp" alt=""></div>
+        </section>
+        <hr>
+    </main>
+ </div>
     
 </body>
 </html>
