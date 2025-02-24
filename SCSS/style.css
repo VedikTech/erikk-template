@@ -283,4 +283,90 @@ main .view_9 h1 {
 }
 main .view_9 p {
   font-size: 1.2rem;
+}
+main .view_10 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+main .view_10 .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .view_10 .intro h1 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 350;
+  padding-bottom: 1rem;
+}
+main .view_10 .intro img {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.7rem;
+}
+main .view_10 .intro .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .view_10 .intro .social p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 350;
+  opacity: 10;
+}
+main .view_10 .intro p {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+main .view_11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .view_11 p {
+  font-size: 1rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+main .view_11 h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 350;
+  width: 90%;
+}
+main .view_11 .find_job {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view_11 .find_job .job_btn {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+main .view_11 .find_job .job_btn i {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+main .view_11 .find_job .job_btn p {
+  opacity: 10;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .view_11 .find_job .job_btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  opacity: 10;
 }/*# sourceMappingURL=style.css.map */
