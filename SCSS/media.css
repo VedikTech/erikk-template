@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@media (min-width: 900px) {
+  .box {
+    margin: 2rem 4rem;
+  }
+  main {
+    margin-top: 1rem;
+  }
+  main .view_2 {
+    flex-direction: row;
+    gap: 6rem;
+  }
+  main .view_2 .view_2_left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+  }
+  main .view_2 .view_2_left_side h1 {
+    padding-top: 4rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 350;
+    line-height: 70px;
+    padding-bottom: 0.6rem;
+  }
+  main .view_2 .view_2_left_side .solution {
+    width: 70%;
+    font-size: 1.4rem;
+  }
+  main .view_3 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  main .view_3 .view_3_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  main .view_3 .view_3_content .view_3_heading {
+    justify-content: space-between;
+    width: 70%;
+  }
+  main .view_3 .view_3_content .view_3_heading h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  main .view_3 .view_3_content .view_3_heading p {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  main .view_4 {
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 4rem;
+    padding-bottom: 6rem;
+  }
+  main .view_4 .services_heading {
+    font-size: 7rem;
+    line-height: 6rem;
+    width: 70%;
+  }
+  main .view_4 .view_4_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+  main .view_4 .view_4_top .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    row-gap: 2rem;
+  }
+  main .view_5 {
+    padding-top: 3rem;
+  }
+  main .view_6 {
+    margin-top: 3rem;
+  }
+  main .view_6 .img_6 {
+    display: block;
+  }
+  main .view_7 .img_6 {
+    display: block;
+  }
+  main .view_8 {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+  }
+  main .view_8 .view_8_img {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .view_8 .view_8_img img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 3rem;
+  }
+  main .view_8 .view_8_content {
+    width: 70%;
+  }
+  main .view_9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .view_9 h1 {
+    font-size: 8rem;
+  }
+  main .view_9 p {
+    width: 60%;
+    float: right;
+  }
+  main .view_10 {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+  }
+  main .view_11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 4rem;
+  }
+  main .view_11 .find_job {
+    width: 50%;
+  }
+  main .view_11 .find_job h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,43 @@
+@mixin button($bgcolor , $color){
+    background-color:$bgcolor ;
+    color:$color;
+    border-radius: 20px;
+    width:auto;
+    padding:10px 20px;
+    font-family: "Roboto Mono", serif;
+   }
+   @mixin flex($dir)
+   {
+     display: flex;
+     flex-direction: $dir;
+   }
+   @mixin heading($size){
+     text-transform: uppercase;
+     font-size: $size;
+     font-weight: 350;
+   }
+   @mixin paragraph($size)
+   {
+     font-size: $size;
+     opacity:0.6;
+   }
+   
+   @mixin arrow_button{
+     @include flex(row);
+     gap:0.5rem;
+     align-items: center;
+     margin-top:1rem;
+     margin-bottom:2rem;
+     i{
+       background-color: black;
+       color:white;
+       padding:10px;
+       border-radius: 50%;
+     }
+     p{
+       opacity:10;
+       text-transform: uppercase;
+       font-size: 0.8rem;
+     }
+   }
+   $color:rgb(17,17,17);
