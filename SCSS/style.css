@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   color: rgb(17, 17, 17);
@@ -53,6 +54,7 @@ nav .lets_btn button {
   width: auto;
   padding: 10px 20px;
   font-family: "Roboto Mono", serif;
+  text-transform: uppercase;
 }
 nav .navicon {
   display: flex;
@@ -380,7 +382,111 @@ main .view_11 .find_job .job_btn a {
 }
 
 footer {
-  background-color: black;
-  color: red;
+  background-color: rgb(17, 17, 17);
+  color: white;
   width: 100%;
+}
+footer .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+footer .top div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .top div img {
+  width: 80%;
+  align-items: center;
+}
+footer .top div h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 350;
+  text-align: center;
+  width: 80%;
+}
+footer .top div button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: auto;
+  padding: 10px 20px;
+  font-family: "Roboto Mono", serif;
+  text-transform: uppercase;
+}
+footer .footer_lists {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 5rem;
+}
+footer .footer_lists .list1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer_lists .list div {
+  padding-top: 1rem;
+}
+footer .footer_lists .list div .so_links {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
+}
+footer .footer_lists .list div .so_links i {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  padding: 7px;
+}
+footer .footer_lists .list a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer_lists .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer_lists .list ul h1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 350;
+  padding-bottom: 0.7rem;
+}
+footer .footer_lists .list ul li {
+  list-style-type: none;
+}
+footer .footer_lists .list ul button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: auto;
+  padding: 10px 20px;
+  font-family: "Roboto Mono", serif;
+  text-transform: uppercase;
+}
+footer .footer_made {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+footer .footer_made .info {
+  opacity: 0.5;
+}
+footer .footer_made i {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  padding: 7px;
 }/*# sourceMappingURL=style.css.map */
