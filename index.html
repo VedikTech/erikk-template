@@ -12,22 +12,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    
+
     <link rel="stylesheet" href="SCSS/media.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="box">
       <nav>
         <div class="logo"><img src="Assets/logo.svg" alt="" /></div>
-        <div>
-          <ul>
-            <li><a href="">Work</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Pages</a></li>
-          </ul>
-        </div>
+       
         <div class="lets_btn">
+          <div>
+            <ul>
+              <li><a href="">Work</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Pages</a></li>
+            </ul>
+          </div>
           <div><p>(0)</p></div>
           <button>Let's Create</button>
           <div class="navicon">
@@ -39,7 +45,8 @@
 
       <main>
         <section class="view_1">
-          <div><img src="Assets/heading.svg" alt="" /></div>
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="center-center"><img src="Assets/heading.svg" alt="" /></div>
           <div class="heading_content">
             <div><p>Branding Agency</p></div>
             <div><p>From Berlin</p></div>
@@ -173,11 +180,12 @@
         </section>
         <hr />
         <section class="view_5">
-          <div><img src="Assets/selected_workimg.svg" alt="" /></div>
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="center-center"><img src="Assets/selected_workimg.svg" alt="" /></div>
         </section>
 
         <section class="view_6">
-          <div><img src="Assets/img_4.webp" alt="" /></div>
+          <div ><img src="Assets/img_4.webp" alt="" /></div>
           <div class="img_6"><img src="Assets/img_6.webp" alt="" /></div>
           <div class="right_side">
             <div>
@@ -195,7 +203,7 @@
         </section>
 
         <section class="view_7">
-          <div><img src="Assets/img_5.webp" alt="" /></div>
+          <div ><img src="Assets/img_5.webp" alt="" /></div>
           <div class="img_6"><img src="Assets/img_7.webp" alt="" /></div>
           <div class="right_side">
             <div>
@@ -215,7 +223,8 @@
            
             <div class="view_8_content">
 
-                <div class="view_8_img"><img src="Assets/client.svg" alt="" /></div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-center" class="view_8_img"><img src="Assets/client.svg" alt="" /></div>
                 <div class="brand_box">
                   <div class="branding">
                     <div class="year">
@@ -287,7 +296,8 @@
         <hr />
 
         <section class="view_9">
-          <div><h1>Team</h1></div>
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="center-center" ><h1>Team</h1></div>
           <div>
             <p>
               We have assembled a team of talented and experienced professionals
@@ -396,10 +406,13 @@
       </main>
 
     </div>
+
+
     <footer>
-        <div class="top">
-            <div><img src="Assets/lets.svg" alt=""></div>
-            <div> <h1>Unleashing the Potential of Your Brand</h1></div>
+        <div class="top" >
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center" ><img src="Assets/lets.svg"  alt=""></div>
+            <div > <h1>Unleashing the Potential of Your Brand</h1></div>
            
             <div><button>get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
             </div>
@@ -421,12 +434,12 @@
 
              <div class="list">
          <ul>
-          <h1><a>Pages </a></h1>
-          <li><a>Home </a></li>
-          <li><a>Services </a></li>
-          <li><a>About </a></li>
-          <li> <a>Jobs </a></li>
-          <li><a> Contact </a></li>
+          <h1><a href="">Pages </a></h1>
+          <li><a href="">Home </a></li>
+          <li><a href="">Services </a></li>
+          <li><a href="">About </a></li>
+          <li> <a href="">Jobs </a></li>
+          <li><a href=""> Contact </a></li>
           <button>more templates  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
 
          </ul>
@@ -436,23 +449,23 @@
                 <div class="list">
   <ul>
     <h1>CMS</h1>
-    <li> <a> work </a></li>
-    <li><a>  work Single </a></li>
-    <li><a> News </a></li>
-    <li><a>News Single </a></li>
-    <li><a>Shop </a></li>
-    <li><a> Shop Single </a></li>
+    <li> <a href=""> work </a></li>
+    <li><a href="">  work Single </a></li>
+    <li><a href=""> News </a></li>
+    <li><a href="">News Single </a></li>
+    <li><a href="">Shop </a></li>
+    <li><a href=""> Shop Single </a></li>
   </ul>
                </div>
 
           <div class="list">
   <ul>
     <h1>Utility Pages</h1>
-    <li> <a>404 Error Page </a></li>
-    <li> <a>Password Protected </a></li>
-    <li><a>Styleguide </a></li>
-    <li><a> Licensing </a></li>
-    <li><a>Changelog </a></li>
+    <li> <a href="">404 Error Page </a></li>
+    <li> <a href="">Password Protected </a></li>
+    <li><a href="">Styleguide </a></li>
+    <li><a href=""> Licensing </a></li>
+    <li><a href="">Changelog </a></li>
     
   </ul>
           </div>
@@ -470,5 +483,14 @@
 
 
     </footer>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,  // Animation duration (1s)
+        once: false,      // Animation repeats on scroll
+        mirror: true      // Repeats when scrolling back up
+      });
+    </script>
   </body>
 </html> 
