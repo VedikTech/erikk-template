@@ -1,11 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-@media (min-width: 900px) {
+@media (max-width: 767px) {
+  main .view_6 {
+    flex-direction: column-reverse;
+  }
+  main .view_7 {
+    flex-direction: column-reverse;
+  }
+  main .view_10 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .footer_lists {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1024px) {
   .box {
     margin: 2rem 4rem;
   }
   nav {
     display: flex;
     justify-content: space-between;
+  }
+  nav .list2 {
+    display: none;
   }
   nav .logo img {
     width: 100%;
@@ -39,12 +58,6 @@
     padding: 10px 20px;
     font-family: "Roboto Mono", serif;
     text-transform: uppercase;
-  }
-  nav .lets_btn button:hover {
-    background-color: rgb(17, 17, 17);
-    color: white;
-    border: 0.5px solid white;
-    transition: all 0.5s ease-in;
   }
   nav .navicon {
     display: none;

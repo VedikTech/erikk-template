@@ -11,10 +11,11 @@ html {
   width: 100%;
   color: $color;
   font-family: "Roboto Mono", serif;
- 
+
   scroll-behavior: smooth;
 }
-i,button{
+i,
+button {
   cursor: pointer;
 }
 hr {
@@ -24,11 +25,10 @@ hr {
   margin: 1rem 2rem;
 }
 
-
-
 nav {
   display: flex;
   justify-content: space-between;
+
 
   .logo {
     img {
@@ -37,20 +37,19 @@ nav {
       object-fit: contain;
     }
   }
+
   ul {
-    display: none;
+  
+
     li {
       list-style-type: none;
-      
     }
-    
+
     a {
       text-decoration: none;
-      color: $color;
+      color: white;
       display: inline-block;
-    position: relative;
-    
-  
+      position: relative;
     }
 
     a::after {
@@ -60,14 +59,12 @@ nav {
       bottom: -4px;
       width: 0;
       height: 2px;
-      background-color: black;
+      background-color:rgb(150, 148, 148);
       transition: width 0.5s ease-in-out;
-  }
-  a:hover::after {
-    width: 100%;
-}
-
-  
+    }
+    a:hover::after {
+      width: 100%;
+    }
   }
   .lets_btn {
     display: flex;
@@ -75,16 +72,53 @@ nav {
     align-items: center;
     button {
       @include button($color, white);
-      
+      &:hover {
+        background-color: white;
+        color: black;
+        border: 0.5px solid black;
+        transition: all 0.5s ease-in;
+      }
     }
   }
   .navicon {
     display: flex;
     align-items: center;
     font-size: 2rem;
+    gap:1rem;
     .fa-xmark {
       display: none;
     }
+  }
+
+
+  .list2 {
+    background-color: black;
+    width: calc(100% - 64px);
+    color: white !important;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    @include flex(column);
+    justify-content: center;
+    gap: 4rem;
+    z-index: 999;
+    align-items: center;
+    display: none; 
+    padding: 7rem;
+    button{
+      @include button(white,black);
+      &:hover {
+        background-color: black;
+        color: white;
+        border: 0.5px solid white;
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+  
+  
+  .list2.show {
+    display: flex;
   }
 }
 
@@ -156,7 +190,6 @@ main {
         gap: 1rem;
         h1 {
           @include heading(2.8rem);
-         
         }
         p {
           @include paragraph(1rem);
@@ -356,80 +389,82 @@ footer {
       }
       button {
         @include button(white, black);
+        &:hover {
+          background-color: rgb(17, 17, 17);
+          color: white;
+          border: 0.5px solid white;
+          transition: all 0.5s ease-in;
+        }
       }
     }
   }
 
- .footer_lists{
-     padding-top:3rem;
-     display:  grid;
-     grid-template-columns: repeat(2,1fr);
-     justify-items: center;
-     row-gap: 5rem;
-     .list1{
+  .footer_lists {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 5rem;
+    .list1 {
       @include flex(column);
       justify-content: space-between;
-     }
-     .list{
-      div{
-        padding-top:1rem;
-        .so_links{
+    }
+    .list {
+      div {
+        padding-top: 1rem;
+        .so_links {
           @include flex(row);
-          column-gap:1rem;
-          row-gap:1rem;
-         i{
-          background-color: white;
-          border-radius:50%;
-          color:black;
-          padding:7px;
-         }
+          column-gap: 1rem;
+          row-gap: 1rem;
+          i {
+            background-color: white;
+            border-radius: 50%;
+            color: black;
+            padding: 7px;
+          }
         }
       }
-      
 
-      a{
-        color:white;
+      a {
+        color: white;
         text-decoration: none;
       }
-      ul{
+      ul {
         @include flex(column);
-        gap:1rem;
-        
-       
-        h1{
+        gap: 1rem;
+
+        h1 {
           @include heading(1.2rem);
-          padding-bottom: 0.7rem;;
-         }
-         li{
+          padding-bottom: 0.7rem;
+        }
+        li {
           list-style-type: none;
-         }
-         button{
-          @include button(white,black)
-         }
+        }
+        button {
+          @include button(white, black);
+          &:hover {
+            background-color: rgb(17, 17, 17);
+            color: white;
+            border: 0.5px solid white;
+            transition: all 0.5s ease-in;
+          }
+        }
       }
-      
-
-     }
-    
-     
- }
- .footer_made{
-  padding-top:4rem;
-  @include flex(column);
-  align-items: center;
-  row-gap: 2rem;
- .info{
-  
-  opacity:0.5;
- 
- }
- i{
-  background-color: white;
-  border-radius:50%;
-  color:black;
-  padding:7px;
- }
-  
- }
-
+    }
+  }
+  .footer_made {
+    padding-top: 4rem;
+    @include flex(column);
+    align-items: center;
+    row-gap: 2rem;
+    .info {
+      opacity: 0.5;
+    }
+    i {
+      background-color: white;
+      border-radius: 50%;
+      color: black;
+      padding: 7px;
+    }
+  }
 }

@@ -7,12 +7,7 @@
     padding:10px 20px;
     font-family: "Roboto Mono", serif;
     text-transform: uppercase;
-   &:hover{
-    background-color:rgb(17,17,17);
-    color:white;
-    border:0.5px solid white;
-    transition: all 0.5s ease-in;
-   }
+   
    }
    @mixin flex($dir)
    {

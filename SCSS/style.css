@@ -14,7 +14,8 @@ html {
   scroll-behavior: smooth;
 }
 
-i, button {
+i,
+button {
   cursor: pointer;
 }
 
@@ -36,15 +37,12 @@ nav .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-nav ul {
-  display: none;
-}
 nav ul li {
   list-style-type: none;
 }
 nav ul a {
   text-decoration: none;
-  color: rgb(17, 17, 17);
+  color: white;
   display: inline-block;
   position: relative;
 }
@@ -55,7 +53,7 @@ nav ul a::after {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: rgb(150, 148, 148);
   transition: width 0.5s ease-in-out;
 }
 nav ul a:hover::after {
@@ -77,18 +75,54 @@ nav .lets_btn button {
   text-transform: uppercase;
 }
 nav .lets_btn button:hover {
-  background-color: rgb(17, 17, 17);
-  color: white;
-  border: 0.5px solid white;
+  background-color: white;
+  color: black;
+  border: 0.5px solid black;
   transition: all 0.5s ease-in;
 }
 nav .navicon {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  gap: 1rem;
 }
 nav .navicon .fa-xmark {
   display: none;
+}
+nav .list2 {
+  background-color: black;
+  width: calc(100% - 64px);
+  color: white !important;
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  z-index: 999;
+  align-items: center;
+  display: none;
+  padding: 7rem;
+}
+nav .list2 button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  width: auto;
+  padding: 10px 20px;
+  font-family: "Roboto Mono", serif;
+  text-transform: uppercase;
+}
+nav .list2 button:hover {
+  background-color: black;
+  color: white;
+  border: 0.5px solid white;
+  transition: all 0.5s ease-in;
+}
+nav .list2.show {
+  display: flex;
 }
 
 main {
